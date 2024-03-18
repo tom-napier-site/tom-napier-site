@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title >Blackford Hill | Signals from Above</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles.css">
+        <!-- Font import -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- Maps API import -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    </head>
+    <div class="body-container">
+    <header>
+        <div class="header-text">
+            <a href="../index.html" class="brand-font nav-homelink">Home Page</a>
+            <h1 class="brand-font brand-title">Signals from <br> above</h1>
+            <h2 class="brand-font brand-slugline">Transmitters in Edinburgh</h2>
+        </div>
+    </header>
+    <body>
+        <hr>
+        <h2 class="brand-font brand-separator-text">Basic information</h2>
+        <img src="../img/thumb/blackford_hires.JPG" class="transmitter-hero body-img">
+        <caption>Blackford hill TX as seen from the South-East. src <a href="http://thomasprobyn.github.io/">Thomas Probyn</a></caption>
+        <!-- <a onclick="collapse(document.getElementById(this.parent))">Collapse</a> -->
+        <div class="collapseable">
+            <!-- <img class="centre" src="../img/thumb/blackford_dab_lowres.png"> -->
+            <p class="text-font">Blackford Hill is a former BT microwave site, which is now used as a modern microwave link site, as well as a host tower for BR (business radio) license holders to install their equipment. Local shops, universities and other enterprises install radio base stations here to act as repeaters for handheld radio equipment of the type used by security guards.</p>
+            <div id="map"></div>
+            <h3 class="brand-font">Quick facts</h3>
+            <table class="text-font">
+                <tr>
+                    <th>Year built:</th>
+                    <td>1951</td>
+                </tr>
+                <tr>
+                    <th>Purpose</th>
+                    <td>BT Microwave television link</td>
+                </tr>
+                <tr>
+                    <th>Tower style</th>
+                    <td>Originally BT pylon, now police radio style</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+        <h2 class="brand-font brand-separator-text">History</h2>
+        <!-- <a onclick="collapse(document.getElementById(this.parent))">Collapse</a> -->
+        <p class="text-font">Blackford has something of a pedegree as a microwave site. Originally a part of the BT Microwave network, a link on the Manchester to Kirk-O-Shotts television route, which took television from the Granada area to the Lothians via the East coast of Northern England. When it was replaced by the nearby (and now nonexistant) Craiglockhart site, the BT microwave dishes were removed, but a photograph of the site remains on the BT archive, as well as the dgsys website, pictured below.</p>
+        <img class="transmitter-hero-vertical centre" src="https://www.dgsys.co.uk/btmicrowave/images/BT/TCB_417_E17506.jpg" alt="Image of Blackford hill as-was, with a tall BT style pylon tower hosting 2 pairs of oppositely polarised microwave antenna.">
+        <caption>Image: Blackford as-was in 1951 (src <a href="https://www.dgsys.co.uk/btmicrowave/sites/267.php">dgsys</a>, original from <a href="http://www.digitalarchives.bt.com/Calmview/GetImage.ashx?db=Catalog&type=default&fname=TCB_417_E17506.jpg">BT Archive</a>)</caption>
+        <p class="text-font">Compared to its counterparts in other parts of the country, Blackford is a relatively minimal installation. The mast does not appear to have served any alterior purposes other than simply linking TV signals (encoded as microwaves) across the landscapes. That is to say, unlike some other sites, this tower never created a signal which could be picked up by viewers, or a link out to a site which could, it was simply a link in a chain. Eventually, the signal would reach Black Hill transmitter, near Airdrie, which would broadcast the resultant signal to the masses.</p>
+        <p class="text-font">At the foot of the mast sits a rather standard 1950s era transmitter hall which held the equipment which would perform demodulation, amplification and remodulation of the incoming microwave signal. A photograph survives in the BT archive of the insides of these buildings.</p>
+        <img class="transmitter-hero-vertical centre" src="http://www.digitalarchives.bt.com/Calmview/GetImage.ashx?db=Catalog&type=default&fname=TCB_417_E18272.jpg" alt="The generator house in blackford hill's foot buildings">
+        <caption>Image: Blackford's generator house (within the 1950s era buildings). src <a href="http://www.digitalarchives.bt.com/Calmview/GetImage.ashx?db=Catalog&type=default&fname=TCB_417_E18272.jpg">BT Archive</a></caption>
+        <hr>
+        <p>PLEASE NOTE: This is a prototype page which would contain more copy when fully implemented.</p>
+    </body>
+    </div>
+    <footer class="brand-font footer-text-spacing">
+        <div class="footer-section">
+        <h2>Navigate</h2>
+            <li><a>Home Page</a></li>
+            <li><a>Interactive map</a></li>
+            <li><a>List of sites</a></li>
+            <li><a>Web Site index</a></li>
+        </div>
+        <div class="footer-section">
+            <h2>Sites by use</h2>
+                <li><a>FM Radio</a></li>
+                <li><a>Digita Radio & DAB</a></li>
+                <li><a>Digital Terestrial Television (DTT)</a></li>
+                <li><a>Microwave fixed links</a></li>
+                <li><a>TETRA (Airwave)</a></li>
+                <li><a>Other radio systems</a></li>
+            </div>
+        <div class="footer-section">
+            <h2>Locations</h2>
+                <li><a>Craigkelly</a></li>
+                <li><a>Braid Hill</a></li>
+                <li><a>Blackford Hill</a></li>
+                <li><a>Craiglockhart</a></li>
+                <li><a>Corstorphine Hill</a></li>
+                <li><a>Castle hill</a></li>
+        </div>
+    </footer>
+</html>
+
+<script>
+    var map = L.map('map').setView([55.9225321456269, -3.1939062837649046], 15);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+var marker = L.marker([55.9225321456269, -3.1939062837649046]).addTo(map);
+marker.bindPopup("<b>Blackford hill</b><br>BT Microwave, BR Tech").openPopup();
+</script>
